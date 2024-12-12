@@ -71,3 +71,38 @@ main {
 .space-between {
   justify-content: space-between;
 }
+
+/* Page styles */
+
+#header a {
+  line-height: 1;
+}
+
+.ai {
+  line-height: 1;
+  font-size: 24px;
+  color: black;
+}
+
+.headshot {
+  margin-inline-start: 2em;
+}
+
+.links {
+  align-items: center;
+  gap: 0.5em;
+}
+
+main {
+  container-type: inline-size;
+}
+
+@container (max-width: 450px) {
+  .headshot {
+    margin: 0 auto 2em;
+  }
+
+  .two-up {
+    flex-direction: column-reverse;
+  }
+}
